@@ -9,73 +9,110 @@
 
 /* Base */
 body {
-  font-family: system-ui, sans-serif;
+  font-family: "Segoe UI", system-ui, sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  color: #222;
-  background: #fff;
+  color: #333;
+  background: linear-gradient(to bottom, #fdfbff, #f3f0ff);
   max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem 1.5rem;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 16px;
 }
 
 /* Navigation */
 nav {
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 nav a {
-  margin-right: 1.25rem;
+  margin: 0 0.75rem;
   text-decoration: none;
-  color: #0066cc;
+  color: #7a5cff;
+  font-weight: 500;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  transition: all 0.2s ease;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  background: #eae6ff;
 }
 
 /* Sections */
 section {
   margin-bottom: 2.5rem;
+  background: #ffffff;
+  padding: 1.25rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 /* Headings */
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin-bottom: 0.75rem;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 0.25rem;
+  color: #6c63ff;
 }
 
 h3 {
   font-size: 1.1rem;
   margin-bottom: 0.25rem;
+  color: #444;
+}
+
+/* About text */
+#about p {
+  color: #555;
 }
 
 /* Projects */
 .project {
   margin-bottom: 1.25rem;
+  padding: 0.75rem;
+  border-radius: 10px;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.project:hover {
+  background: #f7f5ff;
+  transform: translateY(-2px);
 }
 
 .project p {
-  color: #444;
+  color: #555;
 }
 
 /* Skills */
 ul {
-  list-style: disc;
-  padding-left: 1.5rem;
+  list-style: none;
+  padding-left: 0;
 }
 
 li {
-  margin-bottom: 0.25rem;
+  display: inline-block;
+  background: #eae6ff;
+  color: #5a52d5;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  margin: 0.2rem 0.3rem;
+  font-size: 0.9rem;
+}
+
+/* Links */
+a {
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #4a42c4;
 }
 
 /* Footer */
 footer {
   margin-top: 3rem;
-  font-size: 0.875rem;
+  font-size: 0.85rem;
   color: #888;
-  border-top: 1px solid #eee;
-  padding-top: 1rem;
+  text-align: center;
 }
